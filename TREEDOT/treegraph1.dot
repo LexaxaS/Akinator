@@ -1,0 +1,14 @@
+digraph
+{
+rankdir = TB;
+node[shape = record, color = "#000000", fontname = "Sans Bold Not-Rotated", fontsize = 10];
+bgcolor = "#5e67d4";
+TREE[rank = "min", style = "filled", fillcolor = "#007be9", label = "{Tree|Error: 0|Size: 3|<root>Root}"];
+NODE_3[style = "filled", fillcolor = "#faa116", label = "{Value:\n;style;|{<left>Left|<right>Right}}"];
+NODE_1[style = "filled", fillcolor = "#faa116", label = "{Value:\n;suka;|{<left>Left|<right>Right}}"];
+NODE_2[style = "filled", fillcolor = "#faa116", label = "{Value:\n;hyu;|{<left>Left|<right>Right}}"];
+NODE_3:left->NODE_1;
+NODE_3:right->NODE_2;
+
+TREE:root->NODE_3
+}
